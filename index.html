@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Didar Damar | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="dark-theme">
+
+    <nav>
+        <div class="logo">DD</div>
+        <ul class="nav-links">
+            <li><a href="#home" data-en="Home" data-tr="Ana Sayfa">Home</a></li>
+            <li><a href="#education" data-en="Education" data-tr="Eğitim">Education</a></li>
+            <li><a href="#certificates" data-en="Certificates" data-tr="Sertifikalar">Certificates</a></li>
+            <li><a href="#languages" data-en="Languages" data-tr="Diller">Languages</a></li>
+        </ul>
+        <div class="lang-switcher">
+            <button onclick="setLanguage('en')">EN</button> | 
+            <button onclick="setLanguage('tr')">TR</button>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Didar Damar</h1>
+            <p data-en="Information Security Technologist | AI Enthusiast" data-tr="Bilgi Güvenliği Teknolojisti | YZ Meraklısı">Information Security Technologist | AI Enthusiast</p>
+            <span class="badge" data-en="Valedictorian & High Honors" data-tr="Bölüm Birincisi & Yüksek Onur">Valedictorian & High Honors</span>
+        </div>
+    </section>
+
+    <section id="education" class="container">
+        <h2 class="section-title" data-en="Education" data-tr="Eğitim Bilgileri">Education</h2>
+        <div class="card">
+            <h3 data-en="Information Security Technology" data-tr="Bilgi Güvenliği Teknolojisi">Information Security Technology</h3>
+            <p><strong data-en="Associate's Degree" data-tr="Ön Lisans Derecesi">Associate's Degree</strong></p>
+            <p><em data-en="GPA: 3.72 / 4.00" data-tr="Not Ortalaması: 3.72 / 4.00">GPA: 3.72 / 4.00</em></p>
+            <p><strong data-en="Relevant Courses:" data-tr="Alınan Önemli Dersler:">Relevant Courses:</strong></p>
+            <ul class="course-list">
+                <li data-en="Network Security, Cryptography, Database Security" data-tr="Ağ Güvenliği, Kriptografi, Veritabanı Güvenliği">Network Security, Cryptography, Database Security</li>
+                <li data-en="Cyber Forensics, Linux Administration" data-tr="Siber Adli Bilişim, Linux Yönetimi">Cyber Forensics, Linux Administration</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="languages" class="container">
+        <h2 class="section-title" data-en="Languages" data-tr="Konuşabildiğim Diller">Languages</h2>
+        <div class="lang-grid">
+            <div class="lang-item"><strong>Turkish:</strong> <span data-en="Native" data-tr="Ana Dil">Native</span></div>
+            <div class="lang-item"><strong>German:</strong> <span data-en="Advanced (Elementary school in Germany)" data-tr="İleri Seviye (Almanya ilköğretim)">Advanced (Elementary school in Germany)</span></div>
+            <div class="lang-item"><strong>English:</strong> <span data-en="Professional" data-tr="Profesyonel">Professional</span></div>
+        </div>
+    </section>
+
+    <section id="certificates" class="container">
+        <h2 class="section-title" data-en="Certificates" data-tr="Sertifikalar">Certificates</h2>
+        <div class="cert-list">
+            <div class="cert-item">
+                <span data-en="ISO 27001 Lead Auditor (Exemplar Global)" data-tr="ISO 27001 Baş Denetçi (Exemplar Global)">ISO 27001 Lead Auditor (Exemplar Global)</span>
+                <a href="dosya_yolu.pdf" target="_blank" class="btn-sm" data-en="View Diploma" data-tr="Diplomayı Görüntüle">View Diploma</a>
+            </div>
+            <div class="cert-item">
+                <span data-en="ISO 9001 Lead Auditor (Bilginet Academy)" data-tr="ISO 9001 Baş Denetçi (Bilginet Academy)">ISO 9001 Lead Auditor (Bilginet Academy)</span>
+                <a href="dosya_yolu.pdf" target="_blank" class="btn-sm" data-en="View Diploma" data-tr="Diplomayı Görüntüle">View Diploma</a>
+            </div>
+            <div class="cert-item">
+                <span data-en="ISO 9001 Internal Auditor" data-tr="ISO 9001 İç Denetçi">ISO 9001 Internal Auditor</span>
+                <a href="dosya_yolu.pdf" target="_blank" class="btn-sm" data-en="View Diploma" data-tr="Diplomayı Görüntüle">View Diploma</a>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <p>&copy; 2026 Didar Damar.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

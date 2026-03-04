@@ -1,0 +1,80 @@
+:root {
+    --bg-dark: #0a0a0a;
+    --card-bg: #1a1a1a;
+    --text-main: #e0e0e0;
+    --accent-red: #e63946;
+    --gray-soft: #a0a0a0;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+}
+
+nav {
+    background: rgba(10, 10, 10, 0.95);
+    border-bottom: 1px solid #333;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.lang-switcher button {
+    background: none;
+    border: none;
+    color: var(--accent-red);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('cyber-bg.jpg'); /* Opsiyonel arka plan */
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 3px solid var(--accent-red);
+}
+
+.section-title {
+    color: var(--accent-red);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+    border-left: 4px solid var(--accent-red);
+    padding-left: 10px;
+}
+
+.card, .cert-item, .lang-item {
+    background: var(--card-bg);
+    border: 1px solid #333;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.card:hover { border-color: var(--accent-red); }
+
+.course-list { list-style: square; padding-left: 20px; color: var(--gray-soft); }
+
+.btn-sm {
+    display: inline-block;
+    background: var(--accent-red);
+    color: white;
+    padding: 5px 15px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    border-radius: 3px;
+    float: right;
+}
+
+.btn-sm:hover { opacity: 0.8; }
+
+.lang-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
