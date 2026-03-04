@@ -1,14 +1,16 @@
-function setLanguage(lang) {
-    const elements = document.querySelectorAll('[data-en]');
+function changeLang(lang) {
+    const elements = document.querySelectorAll('.translate');
     
     elements.forEach(el => {
-        if (lang === 'tr') {
-            el.textContent = el.getAttribute('data-tr');
-        } else {
-            el.textContent = el.getAttribute('data-en');
+        // data-tr veya data-en değerini al ve içeriğe aktar
+        const newText = el.getAttribute(`data-${lang}`);
+        if (newText) {
+            el.textContent = newText;
         }
     });
 
-    // Sayfa yönünü veya font ayarlarını dile göre buraya ekleyebilirsin
-    document.documentElement.lang = lang;
+    // Sayfa başlığını da güncelle (Opsiyonel)
+    document.title = lang === 'tr' ? 'Didar Damar | Portfolyo' : 'Didar Damar | Portfolio';
+    
+    console.log("Language switched to: " + lang);
 }
