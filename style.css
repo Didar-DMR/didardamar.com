@@ -1,80 +1,89 @@
 :root {
-    --bg-dark: #0a0a0a;
-    --card-bg: #1a1a1a;
-    --text-main: #e0e0e0;
-    --accent-red: #e63946;
-    --gray-soft: #a0a0a0;
+    --bg-black: #0a0a0a;
+    --card-gray: #161616;
+    --cyber-red: #ff4d4d; /* Daha canlı bir kırmızı */
+    --text-white: #ffffff;
+    --text-dim: #a0a0a0;
 }
 
+* { margin: 0; padding: 0; box-sizing: border-box; text-decoration: none; list-style: none; }
+
 body {
-    background-color: var(--bg-dark);
-    color: var(--text-main);
+    background-color: var(--bg-black);
+    color: var(--text-white);
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
 }
 
-nav {
-    background: rgba(10, 10, 10, 0.95);
-    border-bottom: 1px solid #333;
+/* Navigasyon Düzeni */
+.navbar {
     display: flex;
-    justify-content: space-around;
-    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: rgba(10, 10, 10, 0.95);
+    border-bottom: 1px solid #222;
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 1000;
 }
 
-.lang-switcher button {
+.nav-links {
+    display: flex; /* Yan yana dizme */
+    gap: 30px;     /* Butonlar arası boşluk */
+}
+
+.nav-links a {
+    color: var(--text-dim);
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--cyber-red);
+}
+
+.lang-btn {
     background: none;
-    border: none;
-    color: var(--accent-red);
+    border: 1px solid var(--cyber-red);
+    color: var(--cyber-red);
+    padding: 5px 10px;
     cursor: pointer;
-    font-weight: bold;
-}
-
-.hero {
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('cyber-bg.jpg'); /* Opsiyonel arka plan */
-    height: 50vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border-bottom: 3px solid var(--accent-red);
-}
-
-.section-title {
-    color: var(--accent-red);
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 2rem;
-    border-left: 4px solid var(--accent-red);
-    padding-left: 10px;
-}
-
-.card, .cert-item, .lang-item {
-    background: var(--card-bg);
-    border: 1px solid #333;
-    padding: 1.5rem;
-    margin-bottom: 1rem;
     border-radius: 4px;
     transition: 0.3s;
 }
 
-.card:hover { border-color: var(--accent-red); }
+.lang-btn:hover { background: var(--cyber-red); color: white; }
 
-.course-list { list-style: square; padding-left: 20px; color: var(--gray-soft); }
+/* İçerik Alanları */
+.hero { padding: 120px 10%; text-align: center; border-bottom: 2px solid var(--cyber-red); }
 
-.btn-sm {
-    display: inline-block;
-    background: var(--accent-red);
-    color: white;
-    padding: 5px 15px;
-    text-decoration: none;
-    font-size: 0.8rem;
-    border-radius: 3px;
-    float: right;
+.badge { color: var(--cyber-red); border: 1px solid var(--cyber-red); padding: 5px 15px; border-radius: 20px; font-size: 0.85rem; }
+
+.container { padding: 60px 10%; }
+
+.section h2 { color: var(--cyber-red); margin-bottom: 30px; text-transform: uppercase; font-size: 1.2rem; letter-spacing: 2px; }
+
+.card, .lang-card, .cert-item {
+    background: var(--card-gray);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #222;
 }
 
-.btn-sm:hover { opacity: 0.8; }
+.diploma-btn {
+    background: var(--cyber-red);
+    color: white;
+    padding: 6px 16px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
 
-.lang-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.cert-item { display: flex; justify-content: space-between; align-items: center; }
+
+/* Mobil Uyumluluk */
+@media (max-width: 768px) {
+    .nav-links { display: none; } /* Mobilde menü gizlenebilir veya burger menüye çevrilebilir */
+    .cert-item { flex-direction: column; gap: 10px; }
+}
