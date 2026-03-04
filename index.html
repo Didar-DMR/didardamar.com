@@ -9,74 +9,81 @@
 </head>
 <body class="dark-theme">
 
-    <nav>
+    <nav class="navbar">
         <div class="logo">DD</div>
+        
         <ul class="nav-links">
             <li><a href="#home" class="translate" data-en="Home" data-tr="Ana Sayfa">Home</a></li>
             <li><a href="#education" class="translate" data-en="Education" data-tr="Eğitim">Education</a></li>
             <li><a href="#languages" class="translate" data-en="Languages" data-tr="Diller">Languages</a></li>
             <li><a href="#certificates" class="translate" data-en="Certificates" data-tr="Sertifikalar">Certificates</a></li>
         </ul>
+
         <div class="lang-switcher">
-            <button onclick="setLanguage('en')">EN</button> | 
-            <button onclick="setLanguage('tr')">TR</button>
+            <button onclick="changeLang('en')" class="lang-btn">EN</button>
+            <span class="sep">|</span>
+            <button onclick="changeLang('tr')" class="lang-btn">TR</button>
         </div>
     </nav>
 
-    <section id="home" class="hero">
+    <header id="home" class="hero">
         <div class="hero-content">
             <h1>Didar Damar</h1>
-            <p data-en="Information Security Technologist | AI Enthusiast" data-tr="Bilgi Güvenliği Teknolojisti | YZ Meraklısı">Information Security Technologist | AI Enthusiast</p>
-            <span class="badge" data-en="Valedictorian & High Honors" data-tr="Bölüm Birincisi & Yüksek Onur">Valedictorian & High Honors</span>
+            <p class="translate" data-en="Information Security Technologist" data-tr="Bilgi Güvenliği Teknolojisti">Information Security Technologist</p>
+            <span class="badge translate" data-en="Valedictorian & High Honors" data-tr="Bölüm Birincisi & Yüksek Onur">Valedictorian & High Honors</span>
         </div>
-    </section>
+    </header>
 
-    <section id="education" class="container">
-        <h2 class="section-title" data-en="Education" data-tr="Eğitim Bilgileri">Education</h2>
-        <div class="card">
-            <h3 data-en="Information Security Technology" data-tr="Bilgi Güvenliği Teknolojisi">Information Security Technology</h3>
-            <p><strong data-en="Associate's Degree" data-tr="Ön Lisans Derecesi">Associate's Degree</strong></p>
-            <p><em data-en="GPA: 3.72 / 4.00" data-tr="Not Ortalaması: 3.72 / 4.00">GPA: 3.72 / 4.00</em></p>
-            <p><strong data-en="Relevant Courses:" data-tr="Alınan Önemli Dersler:">Relevant Courses:</strong></p>
-            <ul class="course-list">
-                <li data-en="Network Security, Cryptography, Database Security" data-tr="Ağ Güvenliği, Kriptografi, Veritabanı Güvenliği">Network Security, Cryptography, Database Security</li>
-                <li data-en="Cyber Forensics, Linux Administration" data-tr="Siber Adli Bilişim, Linux Yönetimi">Cyber Forensics, Linux Administration</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="languages" class="container">
-        <h2 class="section-title" data-en="Languages" data-tr="Konuşabildiğim Diller">Languages</h2>
-        <div class="lang-grid">
-            <div class="lang-item"><strong>Turkish:</strong> <span data-en="Native" data-tr="Ana Dil">Native</span></div>
-            <div class="lang-item"><strong>German:</strong> <span data-en="Advanced (Elementary school in Germany)" data-tr="İleri Seviye (Almanya ilköğretim)">Advanced (Elementary school in Germany)</span></div>
-            <div class="lang-item"><strong>English:</strong> <span data-en="Professional" data-tr="Profesyonel">Professional</span></div>
-        </div>
-    </section>
-
-    <section id="certificates" class="container">
-        <h2 class="section-title" data-en="Certificates" data-tr="Sertifikalar">Certificates</h2>
-        <div class="cert-list">
-            <div class="cert-item">
-                <span data-en="ISO 27001 Lead Auditor (Exemplar Global)" data-tr="ISO 27001 Baş Denetçi (Exemplar Global)">ISO 27001 Lead Auditor (Exemplar Global)</span>
-                <a href="dosya_yolu.pdf" target="_blank" class="btn-sm" data-en="View Diploma" data-tr="Diplomayı Görüntüle">View Diploma</a>
+    <main class="container">
+        <section id="education" class="section">
+            <h2 class="translate" data-en="Education" data-tr="Eğitim Bilgileri">Education</h2>
+            <div class="card">
+                <h3 class="translate" data-en="Information Security Technology" data-tr="Bilgi Güvenliği Teknolojisi">Information Security Technology</h3>
+                <p><strong>GPA: 3.72 / 4.00</strong></p>
+                <p class="translate" data-en="Graduated as Valedictorian with High Honors." data-tr="Bölüm Birincisi ve Yüksek Onur Belgesi ile Mezuniyet.">Graduated as Valedictorian with High Honors.</p>
+                <div class="course-box">
+                    <strong class="translate" data-en="Key Courses:" data-tr="Önemli Dersler:">Key Courses:</strong>
+                    <ul class="translate" data-en="Network Security, Cryptography, Database Security, Cyber Forensics" data-tr="Ağ Güvenliği, Kriptografi, Veritabanı Güvenliği, Siber Adli Bilişim">
+                        Network Security, Cryptography, Database Security, Cyber Forensics
+                    </ul>
+                </div>
             </div>
-            <div class="cert-item">
-                <span data-en="ISO 9001 Lead Auditor (Bilginet Academy)" data-tr="ISO 9001 Baş Denetçi (Bilginet Academy)">ISO 9001 Lead Auditor (Bilginet Academy)</span>
-                <a href="dosya_yolu.pdf" target="_blank" class="btn-sm" data-en="View Diploma" data-tr="Diplomayı Görüntüle">View Diploma</a>
-            </div>
-            <div class="cert-item">
-                <span data-en="ISO 9001 Internal Auditor" data-tr="ISO 9001 İç Denetçi">ISO 9001 Internal Auditor</span>
-                <a href="dosya_yolu.pdf" target="_blank" class="btn-sm" data-en="View Diploma" data-tr="Diplomayı Görüntüle">View Diploma</a>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <footer id="contact">
-        <p>&copy; 2026 Didar Damar.</p>
-    </footer>
+        <section id="languages" class="section">
+            <h2 class="translate" data-en="Languages" data-tr="Diller">Languages</h2>
+            <div class="lang-grid">
+                <div class="lang-card">
+                    <strong>Turkish:</strong> <span class="translate" data-en="Native" data-tr="Ana Dil">Native</span>
+                </div>
+                <div class="lang-card">
+                    <strong>German:</strong> <span class="translate" data-en="Advanced (Elementary School in Germany)" data-tr="İleri Seviye (Almanya İlköğretim)">Advanced (Elementary School in Germany)</span>
+                </div>
+                <div class="lang-card">
+                    <strong>English:</strong> <span class="translate" data-en="Professional" data-tr="Profesyonel">Professional</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="certificates" class="section">
+            <h2 class="translate" data-en="Certificates" data-tr="Sertifikalar">Certificates</h2>
+            <div class="cert-list">
+                <div class="cert-item">
+                    <span>ISO 27001 Lead Auditor (Exemplar Global)</span>
+                    <a href="diploma1.pdf" target="_blank" class="diploma-btn translate" data-en="View Diploma" data-tr="Diplomayı Görüntüle">View Diploma</a>
+                </div>
+                <div class="cert-item">
+                    <span>ISO 9001 Lead Auditor (Bilginet Academy)</span>
+                    <a href="diploma2.pdf" target="_blank" class="diploma-btn translate" data-en="View Diploma" data-tr="Diplomayı Görüntüle">View Diploma</a>
+                </div>
+                <div class="cert-item">
+                    <span>ISO 9001 Internal Auditor</span>
+                    <a href="diploma3.pdf" target="_blank" class="diploma-btn translate" data-en="View Diploma" data-tr="Diplomayı Görüntüle">View Diploma</a>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <script src="script.js"></script>
 </body>
-
 </html>
