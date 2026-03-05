@@ -71,6 +71,7 @@ body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-
 }
 .lang-row:last-child, .cert-row:last-child { border-bottom: none; }
 
+.uni { color: var(--white); font-size: 1.5rem; margin: 10px 0; }
 .gpa { color: var(--white); font-size: 1.2rem; margin: 10px 0; }
 .course-text { font-size: 0.95rem; color: var(--gray); margin-top: 20px; line-height: 1.8; border-top: 1px solid #222; padding-top: 20px; }
 
@@ -81,6 +82,7 @@ body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-
     .lang-row, .cert-row { flex-direction: column; gap: 10px; align-items: flex-start; }
     .card { padding: 25px; }
 }
+
 
 
 
