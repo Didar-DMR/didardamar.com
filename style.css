@@ -26,34 +26,40 @@ body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-
 .hero-content h1 { font-size: 4rem; margin-bottom: 10px; }
 .subtitle { color: var(--red); font-size: 1.5rem; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; }
 .badge { border: 1px solid var(--red); padding: 6px 18px; border-radius: 20px; font-size: 0.85rem; color: var(--red); display: inline-block; margin-top: 20px; }
+
 .hero-contact { margin-top: 30px; display: flex; justify-content: center; gap: 30px; }
 .hero-contact i { font-size: 2rem; color: var(--gray); transition: 0.3s; }
 .hero-contact i:hover { color: var(--red); transform: translateY(-3px); }
 
-/* İçerik Alanları */
+/* Ortalanmış Bölümler */
 .container { padding: 80px 10%; }
 .section { margin-bottom: 80px; }
 .section h2 { color: var(--red); margin-bottom: 40px; text-transform: uppercase; letter-spacing: 2px; }
 .card { background: var(--card); padding: 40px; border-radius: 10px; border: 1px solid #222; max-width: 900px; margin: 0 auto; }
-.gpa { color: var(--red); font-size: 1.2rem; margin: 10px 0; }
 
-/* Eğitim Belgeleri İçin Kırmızı Metin Linkleri */
+/* Metin Bağlantıları (Kırmızı Yazı) */
 .edu-links { margin: 20px 0; }
-.text-link { color: var(--red); font-weight: 600; transition: 0.3s; font-size: 0.95rem; }
+.text-link { color: var(--red); font-weight: 600; transition: 0.3s; font-size: 0.95rem; cursor: pointer; }
 .text-link:hover { text-shadow: 0 0 10px var(--red); border-bottom: 1px solid var(--red); }
 .sep { color: #333; margin: 0 10px; }
 
+/* Sertifika Satırları */
+.cert-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #222;
+}
+.cert-row:last-child { border-bottom: none; }
+
 .course-text { font-size: 0.95rem; color: var(--gray); margin-top: 20px; line-height: 1.8; border-top: 1px solid #222; padding-top: 20px; }
 
-/* Diller & Sertifikalar */
-.lang-list, .cert-container { display: flex; flex-direction: column; gap: 15px; align-items: center; }
-.lang-card, .cert-card-simple { background: var(--card); padding: 20px 30px; border-radius: 5px; border: 1px solid #222; width: 100%; max-width: 600px; }
-.cert-card-simple { display: flex; justify-content: space-between; align-items: center; }
-.diploma-btn { background: var(--red); color: white; padding: 7px 15px; border-radius: 4px; font-size: 0.8rem; }
+/* Diller Listesi */
+.lang-grid-container { display: flex; flex-direction: column; gap: 15px; align-items: center; }
+.lang-card { background: var(--card); padding: 15px 30px; border-radius: 5px; border: 1px solid #222; width: 100%; max-width: 600px; }
 
-/* Mobil Uyumluluk */
 @media (max-width: 768px) {
     .hero-content h1 { font-size: 2.5rem; }
-    .nav-links { display: none; }
-    .cert-card-simple { flex-direction: column; gap: 10px; }
+    .cert-row { flex-direction: column; gap: 10px; text-align: center; }
 }
