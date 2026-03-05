@@ -71,9 +71,32 @@ body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-
 }
 .lang-row:last-child, .cert-row:last-child { border-bottom: none; }
 
-.uni { color: var(--white); font-size: 0.5rem; margin: 10px 0; }
-.gpa { color: var(--white); font-size: 1rem; margin: 10px 0; }
-.course-text { font-size: 0.95rem; color: var(--gray); margin-top: 20px; line-height: 1.8; border-top: 1px solid #222; padding-top: 20px; }
+/* Üniversite Adı */
+.uni {
+  color: var(--white);
+  font-size: 1.1rem; /* Daha belirgin bir boyut */
+  font-weight: 600;
+  margin-bottom: 4px;
+  display: block;
+}
+
+/* GPA / Ortalama */
+.gpa {
+  color: var(--white);
+  font-size: 0.9rem;
+  opacity: 0.8; /* Üniversite adından biraz daha geri planda durması için */
+  margin-bottom: 12px;
+}
+
+/* Ders İçeriği */
+.course-text {
+  font-size: 0.95rem;
+  color: var(--gray);
+  line-height: 1.6;
+  border-top: 1px solid rgba(255, 255, 255, 0.1); /* Daha yumuşak bir çizgi */
+  padding-top: 15px;
+  margin-top: 15px;
+}
 
 /* Mobil Uyumluluk */
 @media (max-width: 768px) {
@@ -82,6 +105,7 @@ body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-
     .lang-row, .cert-row { flex-direction: column; gap: 10px; align-items: flex-start; }
     .card { padding: 25px; }
 }
+
 
 
 
