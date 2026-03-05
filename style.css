@@ -8,7 +8,6 @@
 
 * { margin: 0; padding: 0; box-sizing: border-box; text-decoration: none; list-style: none; scroll-behavior: smooth; }
 
-/* Body: Başlıkların ortalı kalması için text-align center bırakıldı */
 body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-serif; text-align: center; overflow-x: hidden; }
 
 /* Navbar */
@@ -22,7 +21,7 @@ body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-
 .nav-links a:hover { color: var(--red); }
 .lang-btn { background: none; border: 1px solid var(--red); color: var(--red); cursor: pointer; padding: 2px 8px; border-radius: 4px; font-size: 0.8rem; }
 
-/* Hero: Profil bölümü ortalı kalmaya devam ediyor */
+/* Hero Section */
 .hero { padding: 120px 10%; border-bottom: 2px solid var(--red); background: radial-gradient(circle at center, #1a0505 0%, #050505 100%); }
 .hero-content h1 { font-size: 4rem; margin-bottom: 10px; }
 .subtitle { color: var(--red); font-size: 1.5rem; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; }
@@ -31,12 +30,12 @@ body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-
 .hero-contact i { font-size: 2rem; color: var(--gray); transition: 0.3s; }
 .hero-contact i:hover { color: var(--red); transform: translateY(-3px); }
 
-/* İçerik Kartları: Kartlar ortada, yazılar solda */
+/* Ortalanmış Container & Sola Yaslı İçerik */
 .container { padding: 80px 10%; }
 .section { margin-bottom: 80px; }
 .section h2 { color: var(--red); margin-bottom: 40px; text-transform: uppercase; letter-spacing: 2px; }
 
-/* Kartın kendisi margin: 0 auto ile ortalanır, içindekiler text-align: left ile sola yaslanır */
+/* Kartlar sayfa ortasında durur, içindekiler sola yaslanır */
 .card { 
     background: var(--card); 
     padding: 40px; 
@@ -53,48 +52,23 @@ body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-
 .text-link:hover { text-shadow: 0 0 10px var(--red); border-bottom-color: var(--red); }
 .sep { color: #333; margin: 0 10px; }
 
-/* Sertifika Satır Düzeni */
-.cert-row { 
+/* Satır Düzenleri (Diller ve Sertifikalar İçin Ortak) */
+.lang-row, .cert-row { 
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
     padding: 15px 0; 
     border-bottom: 1px solid #222; 
 }
-.cert-row:last-child { border-bottom: none; }
+.lang-row:last-child, .cert-row:last-child { border-bottom: none; }
 
-/* Kurs listesi metni sola yaslı */
-.course-text { 
-    font-size: 0.95rem; 
-    color: var(--gray); 
-    margin-top: 20px; 
-    line-height: 1.8; 
-    border-top: 1px solid #222; 
-    padding-top: 20px; 
-    text-align: left;
-}
-
-/* Dil Listesi ve Kartları */
-.lang-list { 
-    display: flex; 
-    flex-direction: column; 
-    gap: 15px; 
-    align-items: center; /* Kartları sayfa ortasında tutar */
-}
-.lang-card { 
-    background: var(--card); 
-    padding: 15px 30px; 
-    border-radius: 5px; 
-    border: 1px solid #222; 
-    width: 100%; 
-    max-width: 600px; 
-    text-align: left; /* Dil bilgisini sola yaslar */
-}
+.gpa { color: var(--red); font-size: 1.2rem; margin: 10px 0; }
+.course-text { font-size: 0.95rem; color: var(--gray); margin-top: 20px; line-height: 1.8; border-top: 1px solid #222; padding-top: 20px; }
 
 /* Mobil Uyumluluk */
 @media (max-width: 768px) {
     .hero-content h1 { font-size: 2.5rem; }
     .nav-links { display: none; }
-    .cert-row { flex-direction: column; gap: 10px; align-items: flex-start; }
+    .lang-row, .cert-row { flex-direction: column; gap: 10px; align-items: flex-start; }
     .card { padding: 25px; }
 }
