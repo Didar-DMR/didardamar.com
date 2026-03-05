@@ -8,6 +8,7 @@
 
 * { margin: 0; padding: 0; box-sizing: border-box; text-decoration: none; list-style: none; scroll-behavior: smooth; }
 
+/* Body: Başlıkların ortalı kalması için text-align center bırakıldı */
 body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-serif; text-align: center; overflow-x: hidden; }
 
 /* Navbar */
@@ -21,7 +22,7 @@ body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-
 .nav-links a:hover { color: var(--red); }
 .lang-btn { background: none; border: 1px solid var(--red); color: var(--red); cursor: pointer; padding: 2px 8px; border-radius: 4px; font-size: 0.8rem; }
 
-/* Hero */
+/* Hero: Profil bölümü ortalı kalmaya devam ediyor */
 .hero { padding: 120px 10%; border-bottom: 2px solid var(--red); background: radial-gradient(circle at center, #1a0505 0%, #050505 100%); }
 .hero-content h1 { font-size: 4rem; margin-bottom: 10px; }
 .subtitle { color: var(--red); font-size: 1.5rem; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; }
@@ -30,11 +31,21 @@ body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-
 .hero-contact i { font-size: 2rem; color: var(--gray); transition: 0.3s; }
 .hero-contact i:hover { color: var(--red); transform: translateY(-3px); }
 
-/* İçerik Kartları */
+/* İçerik Kartları: Kartlar ortada, yazılar solda */
 .container { padding: 80px 10%; }
 .section { margin-bottom: 80px; }
 .section h2 { color: var(--red); margin-bottom: 40px; text-transform: uppercase; letter-spacing: 2px; }
-.card { background: var(--card); padding: 40px; border-radius: 10px; border: 1px solid #222; max-width: 900px; margin: 0 auto; }
+
+/* Kartın kendisi margin: 0 auto ile ortalanır, içindekiler text-align: left ile sola yaslanır */
+.card { 
+    background: var(--card); 
+    padding: 40px; 
+    border-radius: 10px; 
+    border: 1px solid #222; 
+    max-width: 900px; 
+    margin: 0 auto; 
+    text-align: left; 
+}
 
 /* Kırmızı Yazı Linkleri */
 .edu-links { margin: 20px 0; }
@@ -43,18 +54,47 @@ body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-
 .sep { color: #333; margin: 0 10px; }
 
 /* Sertifika Satır Düzeni */
-.cert-row { display: flex; justify-content: space-between; align-items: center; padding: 15px 0; border-bottom: 1px solid #222; }
+.cert-row { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 15px 0; 
+    border-bottom: 1px solid #222; 
+}
 .cert-row:last-child { border-bottom: none; }
 
-.course-text { font-size: 0.95rem; color: var(--gray); margin-top: 20px; line-height: 1.8; border-top: 1px solid #222; padding-top: 20px; }
+/* Kurs listesi metni sola yaslı */
+.course-text { 
+    font-size: 0.95rem; 
+    color: var(--gray); 
+    margin-top: 20px; 
+    line-height: 1.8; 
+    border-top: 1px solid #222; 
+    padding-top: 20px; 
+    text-align: left;
+}
 
-/* Dil Listesi */
-.lang-list { display: flex; flex-direction: column; gap: 15px; align-items: center; }
-.lang-card { background: var(--card); padding: 15px 30px; border-radius: 5px; border: 1px solid #222; width: 100%; max-width: 600px; }
+/* Dil Listesi ve Kartları */
+.lang-list { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 15px; 
+    align-items: center; /* Kartları sayfa ortasında tutar */
+}
+.lang-card { 
+    background: var(--card); 
+    padding: 15px 30px; 
+    border-radius: 5px; 
+    border: 1px solid #222; 
+    width: 100%; 
+    max-width: 600px; 
+    text-align: left; /* Dil bilgisini sola yaslar */
+}
 
 /* Mobil Uyumluluk */
 @media (max-width: 768px) {
     .hero-content h1 { font-size: 2.5rem; }
     .nav-links { display: none; }
-    .cert-row { flex-direction: column; gap: 10px; }
+    .cert-row { flex-direction: column; gap: 10px; align-items: flex-start; }
+    .card { padding: 25px; }
 }
