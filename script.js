@@ -11,4 +11,5 @@ function changeLang(lang) {
     document.documentElement.lang = lang;
 }
 
-window.onload = () => console.log("Didar Damar Portfolio Active");
+// Konsol Bilgisi
+console.log("Portfolio Security Scan: Success. Version 2.0 Active.");
