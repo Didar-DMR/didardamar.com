@@ -5,20 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Didar Damar | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="dark-theme">
 
     <nav class="navbar">
         <div class="logo">DЯ</div>
-        
         <ul class="nav-links">
             <li><a href="#home" class="translate" data-en="Home" data-tr="Ana Sayfa">Home</a></li>
             <li><a href="#education" class="translate" data-en="Education" data-tr="Eğitim">Education</a></li>
             <li><a href="#languages" class="translate" data-en="Languages" data-tr="Diller">Languages</a></li>
             <li><a href="#certificates" class="translate" data-en="Certificates" data-tr="Sertifikalar">Certificates</a></li>
         </ul>
-
         <div class="lang-switcher">
             <button onclick="changeLang('en')" class="lang-btn">EN</button>
             <span class="sep">|</span>
@@ -29,43 +27,47 @@
     <header id="home" class="hero">
         <div class="hero-content">
             <h1>Didar Damar</h1>
-            <p class="translate" data-en="Information Security Technologist" data-tr="Bilgi Güvenliği Teknolojisti">Information Security Technologist</p>
+            <p class="translate subtitle" data-en="Information Security Technologist" data-tr="Bilgi Güvenliği Teknolojisti">Information Security Technologist</p>
+            <div class="badge-wrapper">
+                <span class="badge translate" data-en="Valedictorian & High Honors" data-tr="Bölüm Birincisi & Yüksek Onur">Valedictorian & High Honors</span>
+            </div>
             
+            <div class="hero-contact">
+                <a href="https://github.com/didardamar" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/didardamar" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:info@didardamar.com"><i class="fas fa-envelope"></i></a>
+            </div>
         </div>
     </header>
 
     <main class="container">
         <section id="education" class="section">
             <h2 class="translate" data-en="Education" data-tr="Eğitim Bilgileri">Education</h2>
-            <div class="card">
+            <div class="card centered-card">
                 <h3 class="translate" data-en="Information Security Technology" data-tr="Bilgi Güvenliği Teknolojisi">Information Security Technology</h3>
-                <p><strong>GPA: 3.72 / 4.00</strong></p>
+                <p class="gpa"><strong>GPA: 3.72 / 4.00</strong></p>
                 <p class="translate" data-en="Graduated as Valedictorian with High Honors." data-tr="Bölüm Birincisi ve Yüksek Onur Belgesi ile Mezuniyet.">Graduated as Valedictorian with High Honors.</p>
-                <br>
+                
+                <div class="edu-links">
+                    <a href="diploma_uni.pdf" target="_blank" class="text-link translate" data-en="University Diploma" data-tr="Üniversite Diploması">University Diploma</a>
+                    <span class="sep">|</span>
+                    <a href="high_honors.pdf" target="_blank" class="text-link translate" data-en="High Honors Certificate" data-tr="Yüksek Onur Belgesi">High Honors Certificate</a>
+                </div>
+
                 <div class="course-box">
                     <strong class="translate" data-en="Key Courses:" data-tr="Önemli Dersler:">Key Courses:</strong>
-                    <ul class="translate" data-en="Introduction to Cyber Security, Cyber Attack and Defense Methods, Security Event Management, End User Security, Introduction to Computer Networks, 
-                        Server Management, Security Products Management, Databases and SQL Languages, Web Programming Infrastructures, Information Security Management" 
-                        data-tr="Siber Güvenliğe Giriş,Siber Saldırı ve Savunma Yöntemleri, Güvenlik Olay Yönetimi, Son Kullanıcı Güvenliği, Bilgisayar Ağlarına Giriş, 
-                        Sunucu Yönetimi, Güvenlik Ürünleri Yönetimi, Veri Tabanları ve SQL Dilleri, Web Programlama Altyapıları, Bilgi Güvenliği Yönetimi">
-                        Introduction to Cyber Security, 
-                        Cyber Attack and Defense Methods, 
-                        Security Event Management, 
-                        End User Security, 
-                        Introduction to Computer Networks, 
-                        Server Management, 
-                        Security Products Management, 
-                        Databases and SQL Languages, 
-                        Web Programming Infrastructures, 
-                        Information Security Management
-                    </ul>
+                    <p class="course-text translate" 
+                       data-en="Introduction to Cyber Security, Cyber Attack and Defense Methods, Security Event Management, End User Security, Introduction to Computer Networks, Server Management, Security Products Management, Databases and SQL Languages, Web Programming Infrastructures, Information Security Management" 
+                       data-tr="Siber Güvenliğe Giriş, Siber Saldırı ve Savunma Yöntemleri, Güvenlik Olay Yönetimi, Son Kullanıcı Güvenliği, Bilgisayar Ağlarına Giriş, Sunucu Yönetimi, Güvenlik Ürünleri Yönetimi, Veri Tabanları ve SQL Dilleri, Web Programlama Altyapıları, Bilgi Güvenliği Yönetimi">
+                       Introduction to Cyber Security, Cyber Attack and Defense Methods, Security Event Management, End User Security, Introduction to Computer Networks, Server Management, Security Products Management, Databases and SQL Languages, Web Programming Infrastructures, Information Security Management
+                    </p>
                 </div>
             </div>
         </section>
 
         <section id="languages" class="section">
             <h2 class="translate" data-en="Languages" data-tr="Diller">Languages</h2>
-            <div class="lang-grid">
+            <div class="lang-list">
                 <div class="lang-card">
                     <strong class="translate" data-en="Turkish:" data-tr="Türkçe:"> Turkish:</strong> <span class="translate" data-en="Native" data-tr="Ana Dil">Native</span>
                 </div>
@@ -80,14 +82,18 @@
 
         <section id="certificates" class="section">
             <h2 class="translate" data-en="Certificates" data-tr="Sertifikalar">Certificates</h2>
-            <div class="cert-list">
-                <div class="cert-item">
+            <div class="cert-container">
+                <div class="cert-card-simple">
                     <span>ISO 27001 Lead Auditor (Exemplar Global)</span>
                     <a href="diploma1.pdf" target="_blank" class="diploma-btn translate" data-en="View Diploma" data-tr="Diplomayı Görüntüle">View Diploma</a>
                 </div>
-                <div class="cert-item">
+                <div class="cert-card-simple">
                     <span>ISO 9001 Lead Auditor (Bilginet Academy)</span>
                     <a href="diploma2.pdf" target="_blank" class="diploma-btn translate" data-en="View Diploma" data-tr="Diplomayı Görüntüle">View Diploma</a>
+                </div>
+                <div class="cert-card-simple">
+                    <span>ISO 9001 Internal Auditor</span>
+                    <a href="diploma3.pdf" target="_blank" class="diploma-btn translate" data-en="View Diploma" data-tr="Diplomayı Görüntüle">View Diploma</a>
                 </div>
             </div>
         </section>
@@ -96,13 +102,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
