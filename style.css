@@ -33,7 +33,16 @@ body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-
 /* Ortalanmış Container & Sola Yaslı İçerik */
 .container { padding: 80px 10%; }
 .section { margin-bottom: 80px; }
-.section h2 { color: var(--red); margin-bottom: 40px; text-transform: uppercase; letter-spacing: 2px; }
+.section h2 { 
+    color: var(--red); 
+    margin: 0 auto 40px auto; /* Üst/Alt: 40px, Sağ/Sol: Otomatik (Ortalar) */
+    text-align: left;         /* Başlık metnini sola yaslar */
+    max-width: 900px;        /* Kartların genişliğiyle aynı olmalı */
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    padding-left: 10px;      /* Şıklık için çok hafif bir iç boşluk */
+    border-left: 3px solid var(--red); /* Başlığın soluna kırmızı bir çizgi ekler */
+}
 
 /* Kartlar sayfa ortasında durur, içindekiler sola yaslanır */
 .card { 
@@ -72,5 +81,6 @@ body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-
     .lang-row, .cert-row { flex-direction: column; gap: 10px; align-items: flex-start; }
     .card { padding: 25px; }
 }
+
 
 
