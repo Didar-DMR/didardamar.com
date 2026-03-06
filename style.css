@@ -32,7 +32,7 @@ body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-
     
     /* ŞEKİL SEÇİMİ: */
     /*border-radius: 8px;    /* Modern Kare (Squircle) için bu kalsın */
-    border-radius: 50%; */ /* Tam Yuvarlak istiyorsan yukarıdakini silip bunu aç */
+    border-radius: 50%; /* Tam Yuvarlak istiyorsan yukarıdakini silip bunu aç */
     
     color: var(--red);
     font-size: 1.5rem;
@@ -263,6 +263,7 @@ body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-
         gap: 10px;
     }
 }
+
 
 
 
