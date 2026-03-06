@@ -54,13 +54,7 @@ body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-
     margin: 0 auto; 
     text-align: left; 
 }
-.card p {
-    font-size: 1.1rem;
-    color: var(--gray);
-    line-height: 1.7;
-    margin-bottom: 15px;
-    font-weight: 300; /* Daha ince ve zarif bir yazı tipi */
-}
+
 .card h3 {
     color: var(--red);
     font-size: 1.4rem;
@@ -239,6 +233,7 @@ body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-
         gap: 10px;
     }
 }
+
 
 
 
