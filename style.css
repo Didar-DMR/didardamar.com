@@ -97,6 +97,25 @@ body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-
   padding-top: 15px;
   margin-top: 15px;
 }
+.intro-text {
+    max-width: 800px; /* Okuma kolaylığı için metni biraz daraltıyoruz */
+    margin: 60px auto; /* Üstten ve alttan boşluk bırakıp ortalıyoruz */
+    padding: 0 20px;
+    line-height: 1.8; /* Satır aralığını açarak ferahlatıyoruz */
+}
+
+.intro-text p {
+    font-size: 1.2rem;
+    color: var(--gray); /* Yazıyı biraz daha yumuşak bir gri yaparak ana başlıktan ayırıyoruz */
+    font-style: italic; /* Daha profesyonel ve 'vizyoner' bir hava katmak için */
+    text-align: center; /* Ana sayfadaki Hero ile uyumlu olması için ortalıyoruz */
+}
+
+/* Kırmızı vurgu efekti için (isteğe bağlı) */
+.intro-text p::selection {
+    background: var(--red);
+    color: white;
+}
 
 /* Mobil Uyumluluk */
 @media (max-width: 768px) {
@@ -144,6 +163,7 @@ body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-
         gap: 10px;
     }
 }
+
 
 
 
