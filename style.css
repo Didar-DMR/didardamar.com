@@ -148,6 +148,36 @@ body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-
     font-size: 1.05rem;
     padding-left: 20px; /* Okunabilirliği artırmak için iç boşluk */
 }
+/* Proje Sayfasına Özel Stiller */
+.tech-stack {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.tech-stack span {
+    background: #1a1a1a;
+    color: var(--red);
+    border: 1px solid #333;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.project-cta {
+    margin-top: 25px;
+    padding-top: 15px;
+    border-top: 1px solid #222;
+    font-size: 0.95rem;
+    color: var(--gray);
+}
+
+.project-cta .text-link {
+    display: inline; /* Cümle içinde kalması için */
+    margin-left: 5px;
+}
 
 /* Mobil Uyumluluk */
 @media (max-width: 768px) {
@@ -195,6 +225,7 @@ body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-
         gap: 10px;
     }
 }
+
 
 
 
