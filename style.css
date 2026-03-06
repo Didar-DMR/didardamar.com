@@ -100,11 +100,51 @@ body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-
 
 /* Mobil Uyumluluk */
 @media (max-width: 768px) {
-    .hero-content h1 { font-size: 2.5rem; }
-    .nav-links { display: none; }
-    .lang-row, .cert-row { flex-direction: column; gap: 10px; align-items: flex-start; }
-    .card { padding: 25px; }
+    /* Navbar'ı dikey bir düzene sokar */
+    .navbar {
+        flex-direction: column; 
+        padding: 15px 5%;
+        gap: 15px;
+    }
+
+    /* Gizli olan menüyü görünür yapar ve yan yana/alt alta dizer */
+    .nav-links {
+        display: flex !important; /* Gizlemeyi zorla kaldırıyoruz */
+        gap: 15px;
+        flex-wrap: wrap; /* Sığmazsa alt satıra geçer */
+        justify-content: center;
+    }
+
+    .nav-links a {
+        font-size: 0.85rem; /* Mobilde yazıları biraz küçültüyoruz */
+    }
+
+    /* Dil butonlarını ve logoyu hizalar */
+    .lang-switcher {
+        margin-top: 5px;
+    }
+
+    /* Hero ve diğer alanların mobildeki duruşu */
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+    
+    .subtitle {
+        font-size: 1.1rem;
+    }
+
+    .card {
+        padding: 20px;
+        width: 95%; /* Mobilde kartlar ekranı daha çok kaplasın */
+    }
+
+    .row, .cert-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
 }
+
 
 
 
