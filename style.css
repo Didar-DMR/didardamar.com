@@ -178,6 +178,13 @@ body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-
     display: inline; /* Cümle içinde kalması için */
     margin-left: 5px;
 }
+.card p {
+    font-size: 1.1rem;
+    color: var(--gray);
+    line-height: 1.7;
+    margin-bottom: 15px;
+    font-weight: 300; /* Daha ince ve zarif bir yazı tipi */
+}
 
 /* Mobil Uyumluluk */
 @media (max-width: 768px) {
@@ -225,6 +232,7 @@ body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-
         gap: 10px;
     }
 }
+
 
 
 
