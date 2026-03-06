@@ -224,7 +224,7 @@ body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-
 .minimal-footer {
     padding: 40px 10%;
     margin-top: 60px;
-    border-top: 1px solid #1a1a1a; /* Çok ince, belli belirsiz bir çizgi */
+    border-top: 2px solid var(--red); 
     text-align: center;
 }
 
@@ -306,6 +306,7 @@ body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-
         margin-top: 40px;
     }
 }
+
 
 
 
