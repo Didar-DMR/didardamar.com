@@ -21,6 +21,36 @@ body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-
 .nav-links a:hover { color: var(--red); }
 .lang-btn { background: none; border: 1px solid var(--red); color: var(--red); cursor: pointer; padding: 2px 8px; border-radius: 4px; font-size: 0.8rem; }
 
+/* Logo Tasarımı: Siber Rozet Formu */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;           /* Logonun genişliği */
+    height: 50px;          /* Logonun yüksekliği */
+    border: 2px solid var(--red);
+    
+    /* ŞEKİL SEÇİMİ: */
+    border-radius: 8px;    /* Modern Kare (Squircle) için bu kalsın */
+    /* border-radius: 50%; */ /* Tam Yuvarlak istiyorsan yukarıdakini silip bunu aç */
+    
+    color: var(--red);
+    font-size: 1.5rem;
+    font-weight: 900;      /* Ekstra Kalın */
+    font-family: 'Segoe UI Black', sans-serif; /* Daha güçlü ve modern bir font */
+    
+    text-shadow: 0 0 8px rgba(255, 51, 51, 0.5); /* Hafif neon parlama */
+    transition: 0.3s all ease-in-out;
+    cursor: pointer;
+}
+
+/* Mouse ile üzerine gelince (Hover) Efekti */
+.logo:hover {
+    background: var(--red);
+    color: var(--bg);      /* Yazı rengi arka plan rengine döner */
+    box-shadow: 0 0 20px var(--red); /* Güçlü parlama */
+    transform: scale(1.05); /* Hafif büyüme */
+}
 /* Hero Section */
 .hero { padding: 120px 10%; border-bottom: 2px solid var(--red); background: radial-gradient(circle at center, #1a0505 0%, #050505 100%); }
 .hero-content h1 { font-size: 4rem; margin-bottom: 10px; }
@@ -233,6 +263,7 @@ body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-
         gap: 10px;
     }
 }
+
 
 
 
