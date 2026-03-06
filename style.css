@@ -255,13 +255,6 @@ body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-
     opacity: 0.6; /* Daha arka planda durması için */
 }
 
-/* Mobil cihazlarda boşluk ayarı */
-@media (max-width: 768px) {
-    .minimal-footer {
-        padding: 30px 5%;
-        margin-top: 40px;
-    }
-}
 
 /* Mobil Uyumluluk */
 @media (max-width: 768px) {
@@ -308,7 +301,12 @@ body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-
         align-items: flex-start;
         gap: 10px;
     }
+    .minimal-footer {
+        padding: 30px 5%;
+        margin-top: 40px;
+    }
 }
+
 
 
 
