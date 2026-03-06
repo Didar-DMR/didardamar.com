@@ -221,6 +221,47 @@ body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-
     display: inline; /* Cümle içinde kalması için */
     margin-left: 5px;
 }
+.minimal-footer {
+    padding: 40px 10%;
+    margin-top: 60px;
+    border-top: 1px solid #1a1a1a; /* Çok ince, belli belirsiz bir çizgi */
+    text-align: center;
+}
+
+.footer-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.footer-mail {
+    color: var(--red);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    transition: 0.3s;
+}
+
+.footer-mail:hover {
+    text-shadow: 0 0 10px var(--red);
+    opacity: 0.8;
+}
+
+.footer-rights {
+    color: var(--gray);
+    font-size: 0.85rem;
+    opacity: 0.6; /* Daha arka planda durması için */
+}
+
+/* Mobil cihazlarda boşluk ayarı */
+@media (max-width: 768px) {
+    .minimal-footer {
+        padding: 30px 5%;
+        margin-top: 40px;
+    }
+}
 
 /* Mobil Uyumluluk */
 @media (max-width: 768px) {
@@ -268,6 +309,7 @@ body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-
         gap: 10px;
     }
 }
+
 
 
 
