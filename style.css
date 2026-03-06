@@ -57,7 +57,7 @@ body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-
     transform: scale(1.05); /* Hafif büyüme */
 }
 /* Hero Section */
-.hero { padding: 120px 10%; border-bottom: 2px solid var(--red); background: radial-gradient(circle at center, #1a0505 0%, #050505 100%); }
+.hero { padding: 120px 10%; background: radial-gradient(circle at center, #1a0505 0%, #050505 100%); }
 .hero-content h1 { font-size: 4rem; margin-bottom: 10px; }
 .subtitle { color: var(--red); font-size: 1.5rem; font-weight: 600; text-transform: uppercase; letter-spacing: 2px; }
 .badge { border: 1px solid var(--red); padding: 6px 18px; border-radius: 20px; font-size: 0.85rem; color: var(--red); display: inline-block; margin-top: 20px; }
@@ -306,6 +306,7 @@ body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-
         margin-top: 40px;
     }
 }
+
 
 
 
