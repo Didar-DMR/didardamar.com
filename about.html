@@ -1,13 +1,27 @@
 x<!DOCTYPE html>
 <html lang="en">
-<body class="dark-theme">
-    <head>
+<head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Didar Damar | Portfolio</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    </head>
+</head>
+    
+<body class="dark-theme">
+     <nav class="navbar">
+        <div class="logo">DЯ</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active translate" data-en="Home" data-tr="Ana Sayfa">Home</a></li>
+            <li><a href="about.html" class="translate" data-en="About Me" data-tr="Hakkımda">About Me</a></li>
+            <li><a href="projects.html" class="translate" data-en="Projects" data-tr="Projeler">Projects</a></li>
+        </ul>
+        <div class="lang-switcher">
+            <button onclick="changeLang('en')" class="lang-btn">EN</button>
+            <span class="sep">|</span>
+            <button onclick="changeLang('tr')" class="lang-btn">TR</button>
+        </div>
+    </nav>
     <main class="container">
         <section id="education" class="section">
             <h2 class="translate" data-en="Education" data-tr="Eğitim Bilgileri">Education</h2>
@@ -79,5 +93,6 @@ x<!DOCTYPE html>
 </body>
 
 </html>
+
 
 
