@@ -116,6 +116,38 @@ body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-
     background: var(--red);
     color: white;
 }
+.skill-group {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+.skill-group:last-child {
+    border-bottom: none;
+}
+
+.skill-group h4 {
+    color: var(--red);
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 1.5px;
+    display: flex;
+    align-items: center;
+}
+
+/* Başlıkların önüne küçük bir siber detay (Opsiyonel) */
+.skill-group h4::before {
+    content: "> ";
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+.skill-group p {
+    color: var(--text);
+    font-size: 1.05rem;
+    padding-left: 20px; /* Okunabilirliği artırmak için iç boşluk */
+}
 
 /* Mobil Uyumluluk */
 @media (max-width: 768px) {
@@ -163,6 +195,7 @@ body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-
         gap: 10px;
     }
 }
+
 
 
 
