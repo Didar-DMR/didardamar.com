@@ -190,6 +190,28 @@ body {
         padding: 30px 5%;
         margin-top: 40px;
     }
+    .tech-stack {
+        display: flex;
+        flex-wrap: wrap; /* Etiketlerin alt satıra geçmesini sağlar */
+        gap: 8px;        /* Etiketler arasındaki boşluğu mobilde biraz daraltıyoruz */
+        margin-top: 15px;
+        justify-content: flex-start; /* Sola yaslayarak karmaşayı önler */
+    }
+
+    .tech-stack span {
+        font-size: 0.7rem;    /* Mobilde yazı boyutunu küçültüyoruz */
+        padding: 5px 10px;    /* Tıklama/görünme alanını optimize ediyoruz */
+        white-space: nowrap;  /* Etiket içindeki kelimelerin bölünmesini engeller */
+        display: inline-block;
+    }
+    
+    /* Proje açıklamalarının mobilde birbirine girmemesi için */
+    .card p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
 }
+
 
 
