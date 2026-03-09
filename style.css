@@ -152,6 +152,29 @@ body {
     font-weight: 300;   /* İnce bir çizgi olması için */
     user-select: none;  /* Fareyle seçilmesini engeller (UX detayı) */
 }
+.cert-row, .lang-row { 
+    display: flex; 
+    flex-direction: column; /* Linkleri her zaman alta iter */
+    align-items: flex-start; /* Her şeyi sola yaslar */
+    padding: 20px 0; 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05); 
+    gap: 8px; /* Başlık ile link arasındaki boşluk */
+}
+
+/* Link Konteynırı */
+.cert-links {
+    margin-top: 5px;
+    display: flex;
+    align-items: center; /* Ayırıcı çizgi (|) ile linklerin aynı hizada durması için */
+}
+
+/* Ayırıcı Çizgi (Masaüstünde artık görünür olacak) */
+.sep {
+    color: var(--gray);
+    margin: 0 10px;
+    opacity: 0.4;
+    font-size: 0.8rem;
+}
 
 /* Mobil Uyumluluk */
 
@@ -240,6 +263,7 @@ body {
         display: none; /* Mobilde dikey düzende çizgiye gerek kalmaz */
     }
 }
+
 
 
 
