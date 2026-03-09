@@ -259,10 +259,9 @@ body {
         width: auto; /* Tüm satırı kaplamasın, sadece yazı kadar olsun */
         text-align: left; /* Sola yaslı kalsın */
     }
-    .sep {
-        display: none; /* Mobilde dikey düzende çizgiye gerek kalmaz */
-    }
+
 }
+
 
 
 
