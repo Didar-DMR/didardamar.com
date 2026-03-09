@@ -30,8 +30,8 @@ body {
 }
 
 .nav-links { display: flex; gap: 30px; }
-.nav-links a { color: var(--gray); font-size: 0.95rem; transition: 0.4s; font-weight: 500; }
-.nav-links a:hover, .nav-links a.active { color: var(--red); }
+.nav-links a { color: var(--gray) !important; font-size: 0.95rem; transition: 0.3s; font-weight: 500; }
+.nav-links a:hover, .nav-links a.active { color: var(--red) !important; }
 
 .lang-btn { 
     background: none; border: 1px solid var(--red); color: var(--red); 
@@ -152,3 +152,4 @@ body {
     .navbar { padding: 15px 5%; }
     .card { padding: 30px; width: 100%; }
 }
+
