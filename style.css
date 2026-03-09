@@ -211,7 +211,26 @@ body {
         line-height: 1.5;
         margin-bottom: 20px;
     }
+    /* Sertifika ve Dil satırlarını dikey düzene sokar */
+    .cert-row, .lang-row {
+        flex-direction: column;
+        align-items: flex-start; /* Metinleri sola yaslar */
+        gap: 5px; /* Başlık ve link arasındaki çok ince boşluk */
+        padding: 15px 0;
+    }
+
+    /* Linkin sadece bir metin olarak alt satıra geçmesini sağlar */
+    .cert-row .text-link, 
+    .file-item .text-link {
+        display: block; /* Linkin kendi satırını kaplamasını sağlar */
+        margin-top: 5px;
+        background: none; /* Arka planı tamamen kaldırır */
+        padding: 0; /* Buton benzeri iç boşlukları sıfırlar */
+        width: auto; /* Tüm satırı kaplamasın, sadece yazı kadar olsun */
+        text-align: left; /* Sola yaslı kalsın */
+    }
 }
+
 
 
 
