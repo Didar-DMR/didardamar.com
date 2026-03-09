@@ -145,6 +145,13 @@ body {
     padding: 60px 10%; border-top: 1px solid rgba(100, 255, 218, 0.1); 
 }
 .footer-mail { color: var(--red); font-size: 1.1rem; }
+.sep {
+    color: var(--gray); /* Ana metinden daha sönük bir renk */
+    margin: 0 12px;     /* Sağdan ve soldan boşluk */
+    opacity: 0.4;       /* Daha arka planda, zarif bir görünüm */
+    font-weight: 300;   /* İnce bir çizgi olması için */
+    user-select: none;  /* Fareyle seçilmesini engeller (UX detayı) */
+}
 
 /* Mobil Uyumluluk */
 
@@ -229,7 +236,11 @@ body {
         width: auto; /* Tüm satırı kaplamasın, sadece yazı kadar olsun */
         text-align: left; /* Sola yaslı kalsın */
     }
+    .sep {
+        display: none; /* Mobilde dikey düzende çizgiye gerek kalmaz */
+    }
 }
+
 
 
 
